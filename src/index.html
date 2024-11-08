@@ -3,9 +3,87 @@
 	@@include('html/head.html',{ "title":"Мои соц-сети" })
 
 	<body>
-		<!-- <svg class="interactive">
-			<use href="@img/sprite.svg#static--logotip"></use>
-		</svg> -->
+		<main>
+			<section class="intro">
+				<div class="intro__container container">
+					<div class="intro__block-text">
+						<h1 class="intro__name">
+							Артём <br />
+							Назаров
+						</h1>
+						<h4 class="intro__major">Frontent <br />Developer</h4>
+					</div>
+
+					<img class="intro__person" src="@img/frontend-developer.jpg" alt="" />
+				</div>
+			</section>
+
+			<section class="links">
+				<div class="links__container container">
+					<a href="https://t.me/art1hard" class="taplink">
+						<svg class="taplink__icon telegram">
+							<use href="@img/sprite.svg#static--logo--telegram"></use>
+						</svg>
+						<h2 class="taplink__title">Telegram</h2>
+						<small class="taplink__text">Для заказов</small>
+					</a>
+
+					<a href="https://t.me/Frontenders_Blog" class="taplink">
+						<svg class="taplink__icon tg-channel">
+							<use href="@img/sprite.svg#static--logo--tg-channel"></use>
+						</svg>
+						<h2 class="taplink__title">Telegram-ch</h2>
+						<small class="taplink__text">Блог</small>
+					</a>
+
+					<a href="https://www.instagram.com/frontenders_blog" class="taplink">
+						<svg class="taplink__icon instagram">
+							<use href="@img/sprite.svg#static--logo--instagram"></use>
+						</svg>
+						<h2 class="taplink__title star">Instagram</h2>
+						<small class="taplink__text">Для заказов</small>
+					</a>
+
+					<a href="https://wa.me/79523650682" class="taplink">
+						<svg class="taplink__icon whatsapp">
+							<use href="@img/sprite.svg#static--logo--whatsapp"></use>
+						</svg>
+						<h2 class="taplink__title">WhatsApp</h2>
+						<small class="taplink__text">Для связи</small>
+					</a>
+
+					<a href="https://github.com/Art1Hard" class="taplink">
+						<svg class="taplink__icon github">
+							<use href="@img/sprite.svg#static--logo--github"></use>
+						</svg>
+						<h2 class="taplink__title">GitHub</h2>
+						<small class="taplink__text">Портфолио</small>
+					</a>
+
+					<a href="" class="taplink not-active">
+						<svg class="taplink__icon x">
+							<use href="@img/sprite.svg#static--logo--x"></use>
+						</svg>
+						<h2 class="taplink__title star">X</h2>
+						<small class="taplink__text">Скоро</small>
+					</a>
+
+					<a href="" class="taplink not-active">
+						<svg class="taplink__icon linkedin">
+							<use href="@img/sprite.svg#static--logo--linkedin"></use>
+						</svg>
+						<h2 class="taplink__title">Linkedin</h2>
+						<small class="taplink__text">Скоро</small>
+					</a>
+				</div>
+				<div class="links__container-footer container">
+					<p class="links__disclaimer">
+						<span>*</span>является экстремистской организацией,
+						деятельность&nbsp;которой запрещена на&nbsp;территории РФ
+					</p>
+				</div>
+			</section>
+		</main>
 	</body>
 
 	<script src="js/app.min.js"></script>

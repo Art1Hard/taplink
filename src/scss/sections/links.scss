@@ -1,0 +1,23 @@
+.links {
+	&__container {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 15px;
+		margin-bottom: 40px;
+	}
+
+	&__container-footer {
+		padding-bottom: 30px;
+	}
+
+	&__disclaimer {
+		font-size: 10px;
+		line-height: 160%;
+		text-align: center;
+
+		span {
+			font-family: "Almendra", sans-serif;
+		}
+	}
+}

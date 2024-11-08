@@ -1,0 +1,73 @@
+@use "../vars/colors";
+
+.taplink {
+	background: colors.$secondly;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	row-gap: 10px;
+	padding: 15px;
+	color: colors.$accent;
+	box-shadow: 0 4px 4px 0 rgba(#000000, 0.25);
+	border-radius: 4px;
+	flex: 40%;
+	max-width: 138px;
+
+	&.not-active {
+		opacity: 0.4;
+		pointer-events: none;
+	}
+
+	&__icon {
+		max-width: 56px;
+		aspect-ratio: 1/1;
+	}
+
+	&__title {
+		position: relative;
+		font-size: 16px;
+		font-weight: 700;
+	}
+
+	&__text {
+		font-size: 14px;
+	}
+
+	.star::after {
+		content: "*";
+		font-family: "Almendra", serif;
+		position: absolute;
+		font-weight: 400;
+		font-size: 14px;
+		top: -1px;
+		right: -5px;
+	}
+
+	.telegram {
+		filter: drop-shadow(0 0 10px rgba(#1e96c8, 0.5));
+	}
+
+	.tg-channel {
+		filter: drop-shadow(0 0 10px rgba(#4f19a1, 0.5));
+	}
+
+	.instagram {
+		filter: drop-shadow(0 0 10px rgba(#c65a79, 0.5));
+	}
+
+	.whatsapp {
+		filter: drop-shadow(0 0 10px rgba(#25d366, 0.5));
+	}
+
+	.github {
+		filter: drop-shadow(0 0 10px rgba(#5c6bc0, 0.5));
+	}
+
+	.x {
+		filter: drop-shadow(0 0 10px rgba(#000000, 0.5));
+	}
+
+	.linkedin {
+		filter: drop-shadow(0 0 10px rgba(#034a8a, 0.5));
+	}
+}

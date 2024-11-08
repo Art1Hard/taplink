@@ -1,0 +1,12 @@
+@use "./vars/colors";
+
+body {
+	background-color: colors.$primary;
+	color: colors.$accent;
+	font-family: "League Spartan", sans-serif;
+	line-height: 92%;
+}
+
+.container {
+	padding: 0 15px;
+}
