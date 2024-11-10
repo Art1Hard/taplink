@@ -215,6 +215,11 @@ body {
   max-width: 138px;
 }
 
+.taplink:active .taplink__icon {
+  -webkit-filter: drop-shadow(0 0 0 rgba(0, 0, 0, 0)) !important;
+          filter: drop-shadow(0 0 0 rgba(0, 0, 0, 0)) !important;
+}
+
 .taplink.not-active {
   opacity: 0.4;
   pointer-events: none;
