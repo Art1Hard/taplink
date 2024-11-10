@@ -328,7 +328,8 @@ body {
 
 @media (min-width: 627px) {
   .container {
-    margin: 0 auto;
+    margin-right: auto;
+    margin-left: auto;
   }
 
   .intro__container {
