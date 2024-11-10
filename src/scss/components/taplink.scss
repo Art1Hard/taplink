@@ -12,6 +12,15 @@
 	border-radius: 4px;
 	flex: 40%;
 	max-width: 138px;
+	-webkit-tap-highlight-color: transparent;
+
+	&:active {
+		box-shadow: none;
+		translate: 0 4px;
+		.taplink__icon {
+			filter: drop-shadow(0 0 0 rgba(#000, 0)) !important;
+		}
+	}
 
 	&.not-active {
 		opacity: 0.4;
