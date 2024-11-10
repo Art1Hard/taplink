@@ -213,6 +213,7 @@ body {
       -ms-flex: 40%;
           flex: 40%;
   max-width: 138px;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .taplink:active {
