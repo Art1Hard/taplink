@@ -121,6 +121,7 @@ body {
 
 .container {
   padding: 0 15px;
+  max-width: 627px;
 }
 
 .intro {
@@ -158,7 +159,7 @@ body {
 .intro__person {
   max-width: 150px;
   aspect-ratio: 1/1;
-  border-radius: 90px;
+  border-radius: 100%;
   -webkit-box-shadow: 0 0 12px 2px rgba(151, 151, 151, 0.4);
           box-shadow: 0 0 12px 2px rgba(151, 151, 151, 0.4);
 }
@@ -237,6 +238,20 @@ body {
   aspect-ratio: 1/1;
 }
 
+.taplink__text-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  row-gap: 10px;
+}
+
 .taplink__title {
   position: relative;
   font-size: 16px;
@@ -290,4 +305,85 @@ body {
 .taplink .linkedin {
   -webkit-filter: drop-shadow(0 0 10px rgba(3, 74, 138, 0.5));
           filter: drop-shadow(0 0 10px rgba(3, 74, 138, 0.5));
+}
+
+@media (min-width: 474px) {
+  .intro__name {
+    font-size: 32px;
+  }
+
+  .intro__major {
+    font-size: 24px;
+    line-height: 84%;
+  }
+
+  .intro__person {
+    max-width: 200px;
+  }
+
+  .links__disclaimer {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 627px) {
+  .container {
+    margin: 0 auto;
+  }
+
+  .intro__container {
+    padding-left: 15px;
+    padding-right: 15px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+
+  .intro__name {
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+
+  .intro__name br {
+    display: none;
+  }
+
+  .intro__major {
+    text-align: center;
+  }
+
+  .intro__major br {
+    display: none;
+  }
+
+  .intro__person {
+    margin-bottom: 30px;
+  }
+
+  .taplink {
+    max-width: 291px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-column-gap: 20px;
+       -moz-column-gap: 20px;
+            column-gap: 20px;
+  }
+
+  .taplink__text-container {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+  }
+
+  .taplink__title {
+    font-size: 22px;
+  }
+
+  .taplink__text {
+    font-size: 15px;
+  }
 }
