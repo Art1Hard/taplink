@@ -1,5 +1,3 @@
-@charset "UTF-8";
-
 /* Reset and base styles  */
 
 * {
@@ -56,12 +54,6 @@ ul li {
 
 img {
   vertical-align: top;
-}
-
-svg {
-  -webkit-transform: translateZ(0);
-          transform: translateZ(0);
-  /* Принудительная отрисовка */
 }
 
 img,
@@ -228,7 +220,9 @@ body {
 .taplink:active {
   -webkit-box-shadow: none;
           box-shadow: none;
-  translate: 0 4px;
+  -webkit-transform: translateY(4px);
+      -ms-transform: translateY(4px);
+          transform: translateY(4px);
 }
 
 .taplink:active .taplink__icon {
