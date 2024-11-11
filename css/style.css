@@ -264,6 +264,10 @@ body {
   font-size: 14px;
 }
 
+.taplink__text--full {
+  display: none;
+}
+
 .taplink .star::after {
   content: "*";
   font-family: "Almendra", serif;
@@ -380,6 +384,14 @@ body {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: start;
+  }
+
+  .taplink__text-container:has(.taplink__text--full) .taplink__text {
+    display: none;
+  }
+
+  .taplink__text-container:has(.taplink__text--full) .taplink__text--full {
+    display: block;
   }
 
   .taplink__title {
