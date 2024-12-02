@@ -373,9 +373,6 @@ main {
 
 .loader .circle .dot {
   position: absolute;
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
   width: 16px;
   height: 16px;
   border-radius: 50%;
