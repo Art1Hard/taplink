@@ -8,6 +8,12 @@
 		justify-content: center;
 		align-items: center;
 		column-gap: 20px;
+
+		@media (min-width: 627px) {
+			padding-left: 15px;
+			padding-right: 15px;
+			flex-direction: column-reverse;
+		}
 	}
 
 	&__name {
@@ -15,16 +21,50 @@
 		font-weight: 700;
 		line-height: 92%;
 		margin-bottom: 10px;
+
+		@media (min-width: 474px) {
+			font-size: 32px;
+		}
+
+		@media (min-width: 627px) {
+			text-align: center;
+			margin: 0 auto;
+			margin-bottom: 10px;
+
+			br {
+				display: none;
+			}
+		}
 	}
 
 	&__major {
 		font-size: 14px;
+
+		@media (min-width: 474px) {
+			font-size: 24px;
+			line-height: 84%;
+		}
+
+		@media (min-width: 627px) {
+			text-align: center;
+			br {
+				display: none;
+			}
+		}
 	}
 
 	&__person {
 		max-width: 150px;
 		aspect-ratio: 1/1;
-		border-radius: 90px;
+		border-radius: 100%;
 		box-shadow: 0 0 12px 2px rgba(151, 151, 151, 0.4);
+
+		@media (min-width: 474px) {
+			max-width: 200px;
+		}
+
+		@media (min-width: 627px) {
+			margin-bottom: 30px;
+		}
 	}
 }

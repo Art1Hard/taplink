@@ -5,8 +5,23 @@ body {
 	color: colors.$accent;
 	font-family: "League Spartan", sans-serif;
 	line-height: 92%;
+
+	&.locked {
+		overflow: hidden;
+	}
+}
+
+main {
+	transition: opacity 0.2s ease-in-out;
 }
 
 .container {
 	padding: 0 15px;
+
+	max-width: 627px;
+
+	@media (min-width: 627px) {
+		margin-right: auto;
+		margin-left: auto;
+	}
 }

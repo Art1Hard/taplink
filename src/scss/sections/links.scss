@@ -16,6 +16,10 @@
 		line-height: 160%;
 		text-align: center;
 
+		@media (min-width: 474px) {
+			font-size: 18px;
+		}
+
 		span {
 			font-family: "Almendra", sans-serif;
 		}
