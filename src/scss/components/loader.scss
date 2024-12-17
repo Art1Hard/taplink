@@ -6,6 +6,7 @@
 	align-items: center;
 	--animation: 2s ease-in-out infinite;
 	position: fixed;
+	z-index: 1;
 	inset: 0;
 	background-color: colors.$primary;
 	opacity: 0;

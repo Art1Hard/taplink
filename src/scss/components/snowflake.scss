@@ -1,0 +1,45 @@
+@use "sass:math";
+
+.snowflake {
+	display: none;
+	pointer-events: none;
+	--size: 1vw;
+	width: var(--size);
+	height: var(--size);
+	background: white;
+	border-radius: 50%;
+	position: fixed;
+	z-index: 1000;
+	top: -5vh;
+}
+
+.snowflake--active {
+	.snowflake {
+		display: block;
+	}
+}
+
+@keyframes snowfall {
+	0% {
+		transform: translate3d(var(--left-ini), 0, 0);
+	}
+	100% {
+		transform: translate3d(var(--left-end), 110vh, 0);
+	}
+}
+
+@for $i from 1 through 50 {
+	.snowflake:nth-child(#{$i}) {
+		--size: #{math.random(5) * 0.2}vw;
+		--left-ini: #{math.random(20) - 10}vw;
+		--left-end: #{math.random(20) - 10}vw;
+		left: #{math.random(100)}vw;
+		animation: snowfall #{5 + math.random(10)}s linear infinite;
+		animation-delay: -#{math.random(10)}s;
+	}
+}
+
+/* added small blur every 6 snowflakes*/
+.snowflake:nth-child(6n) {
+	filter: blur(1px);
+}

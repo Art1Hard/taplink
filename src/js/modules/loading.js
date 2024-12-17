@@ -6,6 +6,7 @@ const initLoading = () => {
 
 			loader.classList.remove("loader--show");
 			document.body.classList.remove("locked");
+			document.body.classList.add("snowflake--active");
 		}, 1500);
 	});
 };
