@@ -54,6 +54,8 @@
 	}
 
 	&__person {
+		position: relative;
+		z-index: 1;
 		max-width: 150px;
 		aspect-ratio: 1/1;
 		border-radius: 100%;
