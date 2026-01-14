@@ -1,3 +1,5 @@
+import isWinter from "./isWinter.js";
+
 const initLoading = () => {
 	window.addEventListener("load", () => {
 		const loader = document.querySelector(".loader");
@@ -5,7 +7,10 @@ const initLoading = () => {
 
 		loader.classList.remove("loader--show");
 		document.body.classList.remove("locked");
-		document.body.classList.add("snowflake--active");
+
+		if (isWinter()) {
+			document.body.classList.add("snowflake--active");
+		}
 	});
 };
 
